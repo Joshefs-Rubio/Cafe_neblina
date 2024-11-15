@@ -8,7 +8,8 @@ import { DashboardAdministradorComponent } from './dashboard/dashboard-administr
 import { DashboardEmpleadoComponent } from './dashboard/dashboard-empleado/dashboard-empleado.component';
 
 const routes: Routes = [
-  
+  { path: '', redirectTo: '/menu', pathMatch: 'full' },
+  { path: 'menu', component: MenuVistaComponent },
 ];
 
 @NgModule({

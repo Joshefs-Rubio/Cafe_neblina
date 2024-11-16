@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-</head>
-<body>
-  <!-- Encabezado -->
-  <header>
-    <div class="header-title">Cafe Neblina</div>
-    <div>
-      <i class="bx bx-cart icon me-3"></i>
-      <i class="bx bx-user icon"></i>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <h1 class="header-title" [routerLink]="['/menu']">Cafe Neblina</h1>
+      <div>
+        <a [routerLink]="['/carrito']">
+          <i class="bx bx-cart icon me-3"></i>
+        </a>
+        <a [routerLink]="['/login']">
+          <i class="bx bx-user icon"></i>
+        </a>
+      </div>
+    </header>
 
-  <div class="mt-5">
-    <router-outlet></router-outlet>
-  </div>
-  <!-- Footer -->
-  <footer>
-    <div class="footer-links">
-      <a href="#">Sobre Nosotros</a>
-      <a href="#">Términos y Condiciones</a>
+    <div class="mt-5">
+      <router-outlet></router-outlet>
     </div>
-    <div class="footer-text">© 2024 Cafe Neblina. Todos los derechos reservados.</div>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-links">
+        <a [routerLink]="['/sobre-nosotros']">Sobre Nosotros</a>
+        <a [routerLink]="['/terminos']">Términos y Condiciones</a>
+      </div>
+      <div class="footer-text">
+        © 2024 Cafe Neblina. Todos los derechos reservados.
+      </div>
+    </footer>
+  </body>
 </html>

@@ -9,6 +9,8 @@ import { LogInComponent } from './log-in/log-in.component';
 import { CarritoVistaComponent } from './carrito-vista/carrito-vista.component';
 import { DashboardAdministradorComponent } from './dashboard/dashboard-administrador/dashboard-administrador.component';
 import { DashboardEmpleadoComponent } from './dashboard/dashboard-empleado/dashboard-empleado.component';
+import { TerminosComponent } from './terminos-condiciones/terminos/terminos.component';
+import { SobreNosotrosComponent } from './terminos-condiciones/sobre-nosotros/sobre-nosotros.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import { DashboardEmpleadoComponent } from './dashboard/dashboard-empleado/dashb
     LogInComponent,
     CarritoVistaComponent,
     DashboardAdministradorComponent,
-    DashboardEmpleadoComponent
+    DashboardEmpleadoComponent,
+    TerminosComponent,
+    SobreNosotrosComponent
   ],
   imports: [
     BrowserModule,

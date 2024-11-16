@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './menu-vista.component.css'
 })
 export class MenuVistaComponent {
-
+  
 }
